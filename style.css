@@ -203,12 +203,13 @@ header .nav-bar {
 
 .icon-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap:4.5rem;
+    column-gap:4.5rem;
 }
 
 .icon-items {
-    height: 5rem;
+    height: 5.5rem;
     text-align: center;
     border-bottom: 0.1875rem solid transparent;
     transition: all 0.3s;
@@ -228,6 +229,9 @@ header .nav-bar {
 
 
 @media (orientation:portrait) {
+    * {
+        transition: none;
+    }
     html {
         font-size: 4.2vw;
     }
@@ -312,5 +316,16 @@ header .nav-bar {
     .get-now a {
         font-size: 0.9rem;
         transition: none;
-    } 
+    }
+
+    .icon-container {
+        margin-top:4rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+    .icon-items {
+        width: 6.2rem;
+    }
+
 }
