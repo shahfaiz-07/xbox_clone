@@ -197,6 +197,35 @@ header .nav-bar {
     margin-left:0.5rem;
 }
 
+.icon-div {
+    padding: 2rem 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap:4.5rem;
+}
+
+.icon-items {
+    height: 5rem;
+    text-align: center;
+    border-bottom: 0.1875rem solid transparent;
+    transition: all 0.3s;
+}
+
+.icon-items:hover {
+    border-bottom: 0.1875rem solid #054B16;
+}
+
+.icon-items a {
+    font-size: 0.9375rem 0 1.5rem;
+    text-decoration: none;
+    color:#107C10;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 
 @media (orientation:portrait) {
     html {
