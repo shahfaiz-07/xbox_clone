@@ -227,6 +227,168 @@ header .nav-bar {
     font-weight: 600;
 }
 
+.grid-section-1 {
+    border: 0.5rem solid transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 22.1875rem);
+    gap:0.25rem;
+}
+
+.grid-1-items {
+    background-color: red;
+    color: #fff;
+    display: flex;
+}
+
+.grid-1-items>div {
+    width:50%;
+    height: 100%;
+}
+
+.grid-1-content {
+    background-color: #107C10;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2.5rem;
+    justify-content: center;
+    color: #fff;
+}
+
+.grid-1-content h2 {
+    font-size: 1.25rem;
+}
+
+.grid-1-content p {
+    font-size: 0.9375rem;
+}
+
+.grid-1-content a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 0.9375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.grid-1-content a:hover {
+    color: #9BF00B;
+}
+
+.grid-1-content a span {
+    border-bottom: 0.125rem solid transparent;
+    transition: all 0.5s;
+}
+
+.grid-1-content a span:hover {
+    color:#9BF00B;
+    margin-right: 0.5rem;
+    border-bottom: 0.125rem solid #9BF00B;
+}
+
+.grid-1-items:nth-child(1) {
+    grid-row: 1/3;
+    background-image: url(images/grid1_1.jpg);
+    background-size: cover;
+}
+
+.grid-1-image {
+    overflow: hidden;
+}
+
+.grid-1-image>div {
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.grid-1-image>div:hover {
+    scale: 1.1;
+}
+
+.grid-1-items:nth-child(2)>.grid-1-image>div {
+    background-image: url(images/grid1_2.jpg);
+    background-size: cover;
+}
+
+.grid-1-items:nth-child(3) {
+    grid-row: 2/4;
+    background-image: url(images/grid1_3.jpg);
+    background-size: cover;
+}
+
+.grid-1-items:nth-child(4)>.grid-1-image>div {
+    background-image: url(images/grid1_4.jpg);
+    background-size: cover;
+}
+
+.grid-1-items:nth-child(5)>.grid-1-image>div {
+    background-image: url(images/grid1_5.jpg);
+    background-size: cover;
+}
+
+.grid-1-items:nth-child(6)>.grid-1-image>div {
+    background-image: url(images/grid1_6.jpg);
+    background-size: cover;
+}
+
+.single-images {
+    color: #fff;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.single-images-black {
+    color:#000;
+}
+
+.single-images>h2 {
+    font-size: 2.875rem;
+}
+
+.single-images>p {
+    font-size: 0.9375rem;
+}
+
+.single-images>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.single-images-black>a {
+    color: #000;
+}
+
+.single-images>a:hover {
+    color: #9BF00B;
+}
+
+.single-images-black>a:hover {
+    color:#000;
+}
+
+.single-images>a span {
+    border-bottom: 0.125rem solid transparent;
+    transition: all 0.3s;
+}
+
+.single-images>a span:hover {
+    margin-right: 0.3rem;
+    border-bottom: 0.125rem solid #9BF00B;
+}
+
+.single-images-black>a span:hover {
+    border-bottom: 0.125rem solid #000;
+}
+
 
 @media (orientation:portrait) {
     * {
