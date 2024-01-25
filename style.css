@@ -20,6 +20,11 @@ header .nav-bar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #dadada;
+}
+
+.nav-bar i {
+    font-size:1.3rem;
 }
 
 .nav-micro-logo {
@@ -51,6 +56,10 @@ header .nav-bar {
     font-size: 0.8125rem;
 }
 
+.nav-links-area a i, .nav-right-icons a i {
+    font-size: 1rem;
+}
+
 .hover-links {
     padding-bottom: 0.1875rem;
     border-bottom: 0.125rem solid transparent;
@@ -79,5 +88,31 @@ header .nav-bar {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+}
+
+.landscape-hidden {
+    display: none;
+}
+
+@media (orientation:portrait) {
+    html {
+        font-size: 4.2vw;
+    }
+    .portrait-hidden {
+        display: none;
+    }
+
+    .landscape-hidden {
+        display: initial;
+    }
+
+    .nav-menu-icon {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header .nav-bar {
+        justify-content: space-around;
+    }
 }
