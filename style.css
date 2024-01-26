@@ -572,6 +572,49 @@ a.learn-more span:hover {
     text-decoration: underline;
 }
 
+.base-footer {
+    background-color: #F2F2F2;
+    padding: 0 3.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.base-item {
+    font-size: 0.6875rem;
+}
+
+.base-item i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.base-footer-left {
+    display: flex;
+    gap:1.2rem;
+}
+
+.base-footer-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.base-item:nth-child(2) i {
+    color: #0066FF;
+}
+
+.base-footer a {
+    text-decoration: none;
+    color:#616161;
+}
+
+.base-footer {
+    color: #616161;
+}
+
+.base-footer a:hover {
+    text-decoration: underline;
+}
+
 @media (orientation:landscape) {
     .single-images {
         flex-direction: row;
@@ -899,5 +942,24 @@ a.learn-more span:hover {
         flex-direction: column;
         gap:2rem;
         padding-left: 1.5rem;
+    }
+
+    .base-footer {
+        padding-inline: 1rem;
+    }
+
+    .base-footer {
+        flex-direction: column;
+        gap:1.5rem;
+    }
+
+    .base-footer-left {
+        flex-direction: column;
+        gap:0.625rem;
+    }
+
+    .base-footer-right {
+        flex-wrap: wrap;
+        row-gap: 0.625rem;
     }
 }
