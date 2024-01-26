@@ -526,6 +526,7 @@ a.learn-more span:hover {
     width: 2rem;
     height: 1.9rem;
     position: relative;
+    color:#000;
 }
 
 .follow-icons-container a:hover {
