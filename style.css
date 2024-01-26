@@ -263,7 +263,6 @@ header .nav-bar {
 }
 
 .grid-1-items {
-    background-color: red;
     color: #fff;
     display: flex;
 }
@@ -283,6 +282,11 @@ header .nav-bar {
     color: #fff;
 }
 
+.grid-2-content {
+    background-color: #fff;
+    color: #000;
+}
+
 .grid-1-content h2 {
     font-size: 1.25rem;
 }
@@ -299,8 +303,16 @@ header .nav-bar {
     text-transform: uppercase;
 }
 
+.grid-2-content a {
+    color: #000;
+}
+
 .grid-1-content a:hover {
     color: #9BF00B;
+}
+
+.grid-2-content a:hover {
+    color: #000;
 }
 
 .grid-1-content a span {
@@ -312,6 +324,12 @@ header .nav-bar {
     color:#9BF00B;
     margin-right: 0.5rem;
     border-bottom: 0.125rem solid #9BF00B;
+}
+
+.grid-2-content a span:hover {
+    color: #000;
+    margin-right: 0.5rem;
+    border-bottom: 0.125rem solid #000;
 }
 
 .grid-1-items:nth-child(1) {
@@ -358,6 +376,40 @@ header .nav-bar {
 
 .grid-1-items:nth-child(6)>.grid-1-image>div {
     background-image: url(images/grid1_6.jpg);
+    background-size: cover;
+}
+
+.grid-2-items:nth-child(1) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-image: url(images/grid2_4.jpg);
+    background-size: cover;
+}
+
+.grid-2-items:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background-image: url(images/grid2_5.jpg);
+    background-size: cover;
+}
+
+.grid-2-items:nth-child(2)>.grid-1-image>div {
+    background-image: url(images/grid2_1.jpg);
+    background-size: cover;
+}
+
+.grid-2-items:nth-child(4)>.grid-1-image>div {
+    background-image: url(images/grid2_2.jpg);
+    background-size: cover;
+}
+
+.grid-2-items:nth-child(5)>.grid-1-image>div {
+    background-image: url(images/grid2_3.jpg);
+    background-size: cover;
+}
+
+.grid-2-items:nth-child(6)>.grid-1-image>div {
+    background-image: url(images/grid2_6.jpg);
     background-size: cover;
 }
 
@@ -419,6 +471,23 @@ header .nav-bar {
 
 .single-images-black a span:hover {
     border-bottom: 0.125rem solid #000;
+}
+
+a.learn-more {
+    background-color: #9BF00B;
+    color:#054B16;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 30%;
+}
+
+a.learn-more:hover {
+    color: #054B16;
+    background-color: #8BD80A;
+}
+
+a.learn-more span:hover {
+    border-bottom: 0.125rem solid #054B16;
 }
 
 @media (orientation:landscape) {
@@ -587,6 +656,10 @@ header .nav-bar {
 
     .grid-1-items:nth-child(1)> .portrait-image {
         background-image: url(images/grid1_1.jpg);
+    }
+
+    .grid-2-items:nth-child(1)>.portrait-image {
+            background-image: url(images/grid2_4.jpg);
     }
 
     .grid-1-items:nth-child(3)>.portrait-image {
