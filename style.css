@@ -894,4 +894,10 @@ a.learn-more span:hover {
         padding-left: 1rem;
         align-items: flex-start;
     }
+
+    .support-footer {
+        flex-direction: column;
+        gap:2rem;
+        padding-left: 1.5rem;
+    }
 }
