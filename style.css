@@ -241,7 +241,7 @@ header .nav-bar {
     display: flex;
 }
 
-.grid-1-items>div {
+.grid-1-content, .grid-1-image {
     width:50%;
     height: 100%;
 }
@@ -336,25 +336,30 @@ header .nav-bar {
 
 .single-images {
     color: #fff;
-    padding: 2rem;
     flex-direction: column;
-    justify-content: flex-end;
-    gap: 2rem;
 }
 
 .single-images-black {
     color:#000;
 }
 
-.single-images>h2 {
+.single-image-content {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.single-image-content>h2 {
     font-size: 2.875rem;
 }
 
-.single-images>p {
+.single-image-content>p {
     font-size: 0.9375rem;
 }
 
-.single-images>a {
+.single-image-content>a {
     text-decoration: none;
     color: #fff;
     font-size: 0.9375rem;
@@ -363,30 +368,37 @@ header .nav-bar {
     margin-bottom: 3rem;
 }
 
-.single-images-black>a {
+.single-images-black a {
     color: #000;
 }
 
-.single-images>a:hover {
+.single-images a:hover {
     color: #9BF00B;
 }
 
-.single-images-black>a:hover {
+.single-images-black a:hover {
     color:#000;
 }
 
-.single-images>a span {
+.single-images a span {
     border-bottom: 0.125rem solid transparent;
     transition: all 0.3s;
 }
 
-.single-images>a span:hover {
+.single-images a span:hover {
     margin-right: 0.3rem;
     border-bottom: 0.125rem solid #9BF00B;
 }
 
-.single-images-black>a span:hover {
+.single-images-black a span:hover {
     border-bottom: 0.125rem solid #000;
+}
+
+@media (orientation:landscape) {
+    .single-images {
+        flex-direction: row;
+        align-items: flex-end;
+    }
 }
 
 
@@ -490,4 +502,120 @@ header .nav-bar {
         width: 6.2rem;
     }
 
+    .grid-section-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 32rem);
+    }
+
+    .grid-1-items:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+        .grid-1-items:nth-child(2) {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+
+        .grid-1-items:nth-child(3) {
+            grid-row: 3/4;
+            grid-column: 1/2;
+        }
+
+        .grid-1-items:nth-child(4) {
+            grid-row: 4/5;
+            grid-column: 1/2;
+        }
+
+        .grid-1-items:nth-child(5) {
+            grid-row: 5/6;
+            grid-column: 1/2;
+        }
+
+        .grid-1-items:nth-child(6) {
+            grid-row: 6/7;
+            grid-column: 1/2;
+        }
+
+    .single-images .portrait-image {
+        
+        background-size: cover;
+        height: 55%;
+    }
+
+    .grid-1-items {
+        flex-direction: column;
+    }
+
+    .grid-1-image, .grid-1-content {
+        width: 100%;
+    }
+
+    .grid-1-image {
+        height: 40%;
+    }
+    .grid-1-content {
+        height:60%;
+    }
+
+    .grid-1-items:nth-child(1)> .portrait-image {
+        background-image: url(images/grid1_1.jpg);
+    }
+
+    .grid-1-items:nth-child(3)>.portrait-image {
+            background-image: url(images/grid1_3.jpg);
+    }
+
+    .single-image-content {
+        padding: 0 1rem;
+        background-color: #333;
+        height: 45%;
+    }
+
+    .grid-1-items:nth-child(3)>.single-image-content {
+        background-color: #fff;
+    }
+
+    .grid-1-items:nth-child(3)>.single-image-content a {
+        color:#000;
+    }
+
+    .single-image-content>h2 {
+        font-size: 1.75rem;
+    }
+
+    .single-image-content>p {
+        font-size: 1rem;
+    }
+
+    .single-image-content>a {
+        font-size: 1rem;
+    }
+
+    .grid-1-items:nth-child(2)>.grid-1-image>div {
+        background-image: url(images/grid1_2_portrait.jpg);
+    }
+
+    .grid-1-items:nth-child(2), .grid-1-items:nth-child(5), .grid-1-items:nth-child(6) {
+        flex-direction: column-reverse;
+    }
+    .grid-1-items:nth-child(5)>.grid-1-image>div {
+        background-image: url(images/grid1_5_portrait.jpg);
+    }
+
+    .grid-1-content {
+        padding: 0 0.75rem;
+    }
+
+    .grid-1-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .grid-1-content p {
+        font-size: 1rem;
+    }
+
+    .grid-1-content a {
+        font-size: 1rem;
+    }
 }
