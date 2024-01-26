@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
 }
 
 html {
@@ -101,8 +102,25 @@ header .nav-bar {
     position: relative;
 }
 
+.hero-div-2 {
+    background-color: #fff;
+    color: #000;
+    border-inline: 0.5rem solid transparent;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/heroimage2.jpg);
+    background-size: cover;
+}
+
 .hero-div img {
     object-fit: cover;
+}
+
+.hero-div-2 img {
+    color: #000;
 }
 
 .hero-nav {
@@ -142,6 +160,7 @@ header .nav-bar {
     background: white;
     transition: none;
 }
+
 .hero-content {
     right:0;
     width: 45%;
@@ -152,6 +171,10 @@ header .nav-bar {
     flex-direction: column;
     justify-content: center;
     gap:1rem;
+}
+
+.hero-content-2 {
+    z-index: 1;
 }
 
 .hero-content h1 {
@@ -168,6 +191,10 @@ header .nav-bar {
     height: 2rem;
     width: 33%;
     margin-top: 1rem;
+}
+
+.hero-content-2 .get-now {
+    width: 40%;
 }
 
 .get-now a {
@@ -617,5 +644,29 @@ header .nav-bar {
 
     .grid-1-content a {
         font-size: 1rem;
+    }
+    .hero-div-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .hero-image {
+        height: 15rem;
+        background-image: url(images/heroimage2_portrait.jpg);
+    }
+    .hero-content-2 {
+        right: 0;
+        width: 100%;
+        height: 21.17rem;
+        padding: 3rem 4rem 3rem 2rem;
+        text-align: left;
+        position: relative;
+    }
+    .hero-content-2 h1 {
+        margin-bottom: 2rem;
+    }
+    .hero-content-2 .get-now {
+        width: 70%;
+        align-self: flex-start;
     }
 }
