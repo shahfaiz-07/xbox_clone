@@ -540,6 +540,38 @@ a.learn-more span:hover {
     
 }
 
+.support-footer {
+    background-color: #F2F2F2;
+    padding: 2rem 3.5rem;
+    display: flex;
+    gap: 7rem;
+}
+
+.support-footer ul {
+    list-style-type: none;
+}
+
+.support-footer .list-header {
+    font-weight: 650;
+    font-size: 0.9875rem;
+    line-height: 2;
+    color:#616161;
+}
+
+.support-footer .list-item {
+    font-size : 0.6875rem;
+    line-height: 3;
+}
+
+.list-item a {
+    text-decoration: none;
+    color:#616161;
+}
+
+.list-item a:hover {
+    text-decoration: underline;
+}
+
 @media (orientation:landscape) {
     .single-images {
         flex-direction: row;
