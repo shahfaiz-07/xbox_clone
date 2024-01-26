@@ -504,6 +504,42 @@ a.learn-more span:hover {
     gap:1.5rem;
 }
 
+.follow-footer {
+    padding: 1.5rem 3.5rem;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.follow-text {
+    font-size:0.9875rem;
+}
+
+.follow-icons-container {
+    display: flex;
+    font-size: 1.2rem;
+    gap:1.5rem;
+}
+
+.follow-icons-container a {
+    text-decoration: none;
+    width: 2rem;
+    height: 1.9rem;
+    position: relative;
+}
+
+.follow-icons-container a:hover {
+    background-color: #3333331e;
+}
+
+.follow-icons-container a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
 @media (orientation:landscape) {
     .single-images {
         flex-direction: row;
