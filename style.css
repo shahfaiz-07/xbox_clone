@@ -490,6 +490,20 @@ a.learn-more span:hover {
     border-bottom: 0.125rem solid #054B16;
 }
 
+.new-tag {
+    width: fit-content;
+    letter-spacing: 0.0625rem;
+    font-size: 0.8125rem;
+    background-color: #FFD800;
+    padding: 0.1rem 0.5rem;
+    text-transform: uppercase;
+    color:#000;
+}
+
+.reduce-gap {
+    gap:1.5rem;
+}
+
 @media (orientation:landscape) {
     .single-images {
         flex-direction: row;
@@ -505,6 +519,7 @@ a.learn-more span:hover {
     html {
         font-size: 4.2vw;
     }
+
     .portrait-hidden {
         display: none;
     }
@@ -561,6 +576,7 @@ a.learn-more span:hover {
         gap: 2rem;
         justify-content: center;
     }
+
     .hero-content {
         padding: 0 2rem;
         text-align: center;
@@ -569,6 +585,7 @@ a.learn-more span:hover {
         bottom: 0;
         width: 100%;
     }
+
     .hero-content h1 {
         font-size: 1.71rem;
     }
@@ -633,8 +650,36 @@ a.learn-more span:hover {
             grid-column: 1/2;
         }
 
+        .grid-2-items:nth-child(1) {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+        .grid-2-items:nth-child(2) {
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+
+        .grid-2-items:nth-child(3) {
+            grid-row: 5/6;
+            grid-column: 1/2;
+        }
+
+        .grid-2-items:nth-child(4) {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+
+        .grid-2-items:nth-child(5) {
+            grid-row: 3/4;
+            grid-column: 1/2;
+        }
+
+        .grid-2-items:nth-child(6) {
+            grid-row: 6/7;
+            grid-column: 1/2;
+        }
     .single-images .portrait-image {
-        
         background-size: cover;
         height: 55%;
     }
@@ -666,6 +711,10 @@ a.learn-more span:hover {
             background-image: url(images/grid1_3.jpg);
     }
 
+    .grid-2-items:nth-child(3)>.portrait-image {
+        background-image: url(images/grid2_5.jpg);
+    }
+
     .single-image-content {
         padding: 0 1rem;
         background-color: #333;
@@ -674,6 +723,11 @@ a.learn-more span:hover {
 
     .grid-1-items:nth-child(3)>.single-image-content {
         background-color: #fff;
+    }
+
+    .grid-2-items:nth-child(3)>.single-image-content,  .grid-2-items:nth-child(1)>.single-image-content{
+        background-color: #333;
+        height: 55%;
     }
 
     .grid-1-items:nth-child(3)>.single-image-content a {
@@ -696,12 +750,24 @@ a.learn-more span:hover {
         background-image: url(images/grid1_2_portrait.jpg);
     }
 
+    .grid-2-items:nth-child(2)>.grid-1-image>div {
+        background-image: url(images/grid2_1_portrait.jpg);
+    }
+
     .grid-1-items:nth-child(2), .grid-1-items:nth-child(5), .grid-1-items:nth-child(6) {
         flex-direction: column-reverse;
     }
     .grid-1-items:nth-child(5)>.grid-1-image>div {
         background-image: url(images/grid1_5_portrait.jpg);
     }
+
+    .grid-2-items:nth-child(5)>.grid-1-image>div {
+            background-image: url(images/grid2_3_portrait.jpg);
+    }
+
+        .grid-2-items:nth-child(6)>.grid-1-image>div {
+            background-image: url(images/grid2_6_portrait.jpg);
+        }
 
     .grid-1-content {
         padding: 0 0.75rem;
@@ -741,5 +807,17 @@ a.learn-more span:hover {
     .hero-content-2 .get-now {
         width: 70%;
         align-self: flex-start;
+    }
+
+    a.learn-more {
+        width: 50%;
+        margin-bottom: 1.5rem;
+    }
+
+    .grid-2-items:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+    .grid-2-items:nth-child(5) {
+        flex-direction: column;
     }
 }
