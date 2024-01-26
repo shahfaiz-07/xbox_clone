@@ -856,4 +856,10 @@ a.learn-more span:hover {
     .grid-2-items:nth-child(5) {
         flex-direction: column;
     }
+
+    .follow-footer {
+        flex-direction: column;
+        padding-left: 1rem;
+        align-items: flex-start;
+    }
 }
