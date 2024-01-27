@@ -156,7 +156,7 @@ header .nav-bar {
     background: #ffffff85;
 }
 
-#circle3 {
+#circle1 {
     background: white;
     transition: none;
 }
@@ -671,7 +671,7 @@ a.learn-more span:hover {
     }
 
     .hero-div img {
-        content: url("images/heroimageportrait.jpg");
+        content: url("images/hero_portrait_herobranch.jpg");
     }
 
     .hero-div {
